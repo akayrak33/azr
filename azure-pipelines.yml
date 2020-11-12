@@ -17,5 +17,5 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g swiftlint
+    npm install -g swiftlint --config sample-swiftlint.yml
   displayName: 'npm install and build'
