@@ -10,5 +10,15 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-jobs:
-- template: job--pre-commit.yml
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '8.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run lint # Mapped to `eslint src` in package.json
+    npm run slint # `stylelint src` in package.json
+    npm run build
+  displayName: 'npm install and build'
