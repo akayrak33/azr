@@ -4,6 +4,8 @@ import RxSwift
 class SampleViewController: UIViewController {
     let service = BaseService()
     let disposeBag = DisposeBag()
+    
+    let somet = "asdasd"
 
     override func viewDidLoad() {
         super.viewDidLoad()
