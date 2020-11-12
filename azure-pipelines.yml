@@ -12,7 +12,5 @@ pool:
 
 steps:
 - script: |
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-    brew install swiftlint
     swiftlint --config sample-swiftlint.yml
   displayName: 'install and build'
