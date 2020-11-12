@@ -31,3 +31,4 @@ jobs:
     displayName: install pre-commit
   - script: pre-commit run --all-files --show-diff-on-failure
     displayName: run pre-commit
+
