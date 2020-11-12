@@ -14,6 +14,16 @@ steps:
 
 - script: |
     cd /Users/runner/work/1/s
+    git status
+    ls
+
+- script: |
+    cd ../1/s
+    git status
+    ls
+    
+- script: |
+    cd /Users/runner/work/1/s
     git ls-files -m
     
 - script: |
