@@ -11,6 +11,10 @@ pool:
   vmImage: 'macOS-10.15'
 
 steps:
+
+- script: 
+    - "sh ./pre-commit.sh"
+    
 - script: |
     swiftlint --config sample-swiftlint.yml
   displayName: 'install and build'
