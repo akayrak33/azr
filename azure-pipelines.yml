@@ -11,4 +11,4 @@ pool:
   vmImage: 'ubuntu-latest'
 
 jobs:
-- template: job--pre-commit
+- template: job--pre-commit.yaml
