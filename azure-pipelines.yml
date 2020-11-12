@@ -13,7 +13,7 @@ pool:
 steps:
 
 - script: |
-  git ls-files -m
+    git ls-files -m
 
 - script: |
     sh ./pre-commit.sh
