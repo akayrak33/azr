@@ -8,15 +8,10 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '8.x'
-  displayName: 'Install Node.js'
+  vmImage: 'macOS-10.15'
 
 - script: |
-    npm install -g swiftlint
-    node-swiftlint --config sample-swiftlint.yml
-  displayName: 'npm install and build'
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    brew install swiftlint
+    swiftlint --config sample-swiftlint.yml
+  displayName: 'install and build'
