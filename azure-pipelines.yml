@@ -15,25 +15,11 @@ steps:
 - script: |
     cd /Users/runner/work/1/s
     git status
-    ls
-
-- script: |
-    cd ../1/s
-    git status
-    ls
-    
-- script: |
-    cd /Users/runner/work/1/s
     git ls-files -m
-    
-- script: |
-    cd /Users/runner/work/1/s
     git diff --diff-filter=d
-    
-- script: |
-    cd /Users/runner/work/1/s
     git diff --diff-filter=d --staged
-    
+    ls -al
+
 - script: |
     sh ./pre-commit.sh
     
