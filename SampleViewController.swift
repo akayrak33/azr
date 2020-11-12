@@ -5,7 +5,7 @@ class SampleViewController: UIViewController {
     let service = BaseService()
     let disposeBag = DisposeBag()
     
-    let somet = "asdasdcccc"
+    let somet = "xxx"
 
     override func viewDidLoad() {
         super.viewDidLoad()
