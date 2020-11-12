@@ -17,8 +17,5 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
-    npm run lint # Mapped to `eslint src` in package.json
-    npm run slint # `stylelint src` in package.json
-    npm run build
+    npm install -g swiftlint
   displayName: 'npm install and build'
