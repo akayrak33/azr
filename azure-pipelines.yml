@@ -10,6 +10,7 @@ trigger:
 pool:
   vmImage: 'macOS-10.15'
 
+steps:
 - script: |
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     brew install swiftlint
