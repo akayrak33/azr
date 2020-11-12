@@ -12,6 +12,9 @@ pool:
 
 steps:
 
+- script:
+  git ls-files -m
+
 - script: |
     sh ./pre-commit.sh
     
