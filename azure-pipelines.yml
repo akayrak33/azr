@@ -11,17 +11,6 @@ pool:
   vmImage: 'macOS-10.15'
 
 steps:
-
-- script: |
-    cd /Users/runner/work/1/s
-    git status
-    git ls-files -m
-    git diff --diff-filter=d
-    git diff --diff-filter=d --staged
-    ls -al
-
-- script: |
-    sh ./pre-commit.sh
     
 - script: |
     swiftlint --config sample-swiftlint.yml
